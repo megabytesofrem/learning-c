@@ -1,4 +1,4 @@
-# K&R C
+# C Programming: A Modern Approach
 
 ## printf
 `printf` takes format specifiers which can be used to specify how we
@@ -7,6 +7,11 @@ want the output to be displayed.
 - %d: format as an integer
 - %f: format as a float
 - %x: format as a pointer
+
+## print/scanf Gotchas
+- compilers arent required to check the number of conversion specifiers in a
+  format string matches the amount of arguments - it will just print garbage instead
+- forgetting to put the & in front of the variable when using scanf will result in UB
 
 ## Pass By Value
 In C all function arguments are passed by value, not by reference.
